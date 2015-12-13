@@ -2,12 +2,11 @@ import {inject} from 'aurelia-framework';
 
 @inject(Element)
 export class BlurImageCustomAttribute {
-  element: Element;
-  constructor(element) {
+  constructor(private element: Element) {
     this.element = element;
   }
 
-  valueChanged(newImage) {
+  valueChanged(newImage: HTMLImageElement) {
     if (newImage.complete) {
       drawBlur(this.element, newImage);
     } else {

@@ -6,16 +6,13 @@ import 'fetch';
 export class Users {
   heading = 'Github Users';
   users = [];
-  http: HttpClient;
 
-  constructor(http) {
+  constructor(private http: HttpClient) {
     http.configure(config => {
       config
         .useStandardConfiguration()
         .withBaseUrl('https://api.github.com/');
     });
-
-    this.http = http;
   }
 
   activate() {
