@@ -3,40 +3,35 @@
 
 module.exports = function(config) {
   config.set({
-
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
-
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jspm', 'jasmine'],
 
     jspm: {
-      // Edit this to your needs
-      loadFiles: ['src/**/*.js', 'test/unit/**/*.js'],
+      loadFiles: ['test/unit/**/*.js'],
+      serveFiles: ['src/**/*.ts'],
       paths: {
-        '*': '*.js',
-        'github:*': 'jspm_packages/github/*.js',
-        'npm:*': 'jspm_packages/npm/*.js'
+        '*': '*',
+        'github:*': 'jspm_packages/github/*',
+        'npm:*': 'jspm_packages/npm/*'
       }
     },
 
-
     // list of files / patterns to load in the browser
     files: [],
-
 
     // list of files to exclude
     exclude: [
     ],
 
-
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'test/**/*.js': ['babel'],
-      'src/**/*.js': ['babel']
+      'src/**/*.ts': ['typescript']
     },
     'babelPreprocessor': {
       options: {
@@ -47,6 +42,21 @@ module.exports = function(config) {
           "es7.classProperties"
         ]
       }
+    },
+    typescriptPreprocessor: {
+      // options passed to typescript compiler  
+      tsconfigPath: './tsconfig.json', // *obligatory 
+      compilerOptions: { // *optional 
+        removeComments: false
+      },
+      ignorePath: function(path){ // ignore all files that ends with .d.ts (this files will not be served) 
+       return /\.d\.ts$/.test(path);
+      },
+      // transforming the filenames  
+      // you can pass more than one, they will be execute in order 
+      transformPath: [function(path) { // *optional 
+        return path.replace(/\.ts$/, '.js');
+      }]
     },
 
     // test results reporter to use
