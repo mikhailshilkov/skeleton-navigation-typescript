@@ -1,8 +1,8 @@
-import {inject} from 'aurelia-framework';
+import {autoinject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
 import 'fetch';
 
-@inject(HttpClient)
+@autoinject
 export class Users {
   heading = 'Github Users';
   users = [];
