@@ -24,13 +24,12 @@ module.exports = function(config) {
         transpiler: 'typescript'
       },
       serveFiles: [
-        'src/**/*.ts'
+        'src/**/*.ts',
+        'jspm_packages/**/*.js'
       ]
     },
     files: [
-      'test/unit/app.spec.ts',
-      'test/unit/child-router.spec.ts',
-      'test/unit/users.spec.ts'
+      'test/unit/*.spec.ts'
     ],
     exclude: [],
     preprocessors: { },
