@@ -1,20 +1,31 @@
 {
-  "version": "1.6.2",
+  "version": "1.7.3",
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es6",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "rootDir": "src/",
-    "sourceMap": true
+    "sourceMap": true,
+    "target": "ES5",
+    "module": "amd",
+    "moduleResolution": "classic",
+    "declaration": false,
+    "noImplicitAny": false,
+    "noResolve": true,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
   "filesGlob": [
     "./src/**/*.ts",
-    "./build/typings/*.d.ts",
     "./typings/**/*.d.ts",
     "./jspm_packages/**/*.d.ts"
   ],
   "files": [
+    "./typings/tsd.d.ts",
     "./typings/core-js/core-js.d.ts",
+    "./typings/es6-promise/es6-promise.d.ts",
+    "./typings/es6.d.ts",
+    "./typings/jasmine/jasmine.d.ts",
     "./typings/whatwg-fetch/whatwg-fetch.d.ts",
     "./jspm_packages/npm/aurelia-animator-css@1.0.0-beta.1.0.1/aurelia-animator-css.d.ts",
     "./jspm_packages/npm/aurelia-binding@1.0.0-beta.1.0.1/aurelia-binding.d.ts",

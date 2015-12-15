@@ -1,4 +1,3 @@
-var babel = require('babel');
 
 module.exports = function (wallaby) {
 
@@ -8,23 +7,14 @@ module.exports = function (wallaby) {
       {pattern: 'jspm_packages/system.js', instrument: false},
       {pattern: 'config.js', instrument: false},
 
-      {pattern: 'src/**/*.js', load: false}
+      {pattern: 'src/**/*.ts', load: false}
 
     ],
 
     tests: [
-      {pattern: 'test/unit/**/*.spec.js', load: false}
+      {pattern: 'test/unit/**/*.spec.ts', load: false}
     ],
 
-    compilers: {
-      '**/*.js': wallaby.compilers.babel({
-        babel: babel,
-        optional: [
-          "es7.decorators",
-          "es7.classProperties"
-        ]
-      })
-    },
 
     middleware: (app, express) => {
       app.use('/jspm_packages', express.static(require('path').join(__dirname, 'jspm_packages')));
@@ -35,8 +25,22 @@ module.exports = function (wallaby) {
 
       System.config({
         paths: {
-          '*': '*.js'
-        }
+          "*": null,
+          "src/*": "src/*",
+          "typescript": "node_modules/typescript/lib/typescript.js",
+          "systemjs": "node_modules/systemjs/dist/system.js",
+          'system-polyfills': 'node_modules/systemjs/dist/system-polyfills.js',
+          'es6-module-loader': 'node_modules/es6-module-loader/dist/es6-module-loader.js'
+        },
+         packages: {
+          'test/unit': {
+            defaultExtension: 'ts'
+          },
+          'src': {
+            defaultExtension: 'ts'
+          }
+        },
+        transpiler: 'typescript'
       });
 
       var promises = [];

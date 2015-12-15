@@ -1,2 +1,1 @@
-﻿declare module "core-js" {
-}
+﻿declare module "core-js" {}
