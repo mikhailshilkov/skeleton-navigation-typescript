@@ -51,7 +51,6 @@
     "karma": "^0.13.15",
     "karma-babel-preprocessor": "^5.2.1",
     "karma-chrome-launcher": "^0.1.7",
-    "karma-coverage": "douglasduteil/karma-coverage#next",
     "karma-jasmine": "^0.3.5",
     "karma-systemjs": "^0.10.0",
     "object.assign": "^1.0.3",
