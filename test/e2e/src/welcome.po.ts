@@ -9,11 +9,13 @@ export class PageObject_Welcome {
   }
 
   setFirstname(value) {
-    return element(by.valueBind('firstName')).clear().sendKeys(value);
+    let firstName = element(by.valueBind('firstName'));
+    return firstName.clear().then(() => firstName.sendKeys(value));
   }
 
   setLastname(value) {
-    return element(by.valueBind('lastName')).clear().sendKeys(value);
+    let lastName = element(by.valueBind('lastName'));
+    return lastName.clear().then(() => lastName.sendKeys(value));
   }
 
   getFullname() {

@@ -22,10 +22,13 @@
   ],
   "files": [
     "./typings/tsd.d.ts",
+    "./typings/angular-protractor/angular-protractor.d.ts",
+    "./typings/aurelia-protractor.d.ts",
     "./typings/core-js/core-js.d.ts",
     "./typings/es6-promise/es6-promise.d.ts",
     "./typings/es6.d.ts",
     "./typings/jasmine/jasmine.d.ts",
+    "./typings/selenium-webdriver/selenium-webdriver.d.ts",
     "./typings/whatwg-fetch/whatwg-fetch.d.ts",
     "./jspm_packages/npm/aurelia-animator-css@1.0.0-beta.1.0.1/aurelia-animator-css.d.ts",
     "./jspm_packages/npm/aurelia-binding@1.0.0-beta.1.0.1/aurelia-binding.d.ts",
