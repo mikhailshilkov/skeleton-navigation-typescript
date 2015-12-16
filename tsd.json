@@ -16,9 +16,6 @@
     },
     "selenium-webdriver/selenium-webdriver.d.ts": {
       "commit": "24e12a7af994afa2226af70fbfae0adc78736a9e"
-    },
-    "whatwg-fetch/whatwg-fetch.d.ts": {
-      "commit": "24e12a7af994afa2226af70fbfae0adc78736a9e"
     }
   }
 }

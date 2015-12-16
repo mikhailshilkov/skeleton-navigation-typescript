@@ -1,7 +1,7 @@
 {
-  "name": "aurelia-skeleton-navigation",
-  "version": "1.0.0-beta.1.0.1",
-  "description": "A starter kit for building a standard navigation-style app with Aurelia.",
+  "name": "aurelia-skeleton-navigation-typescript",
+  "version": "1.0.0-beta.1.0.3",
+  "description": "A starter kit for building a standard navigation-style app with Aurelia and TypeScript.",
   "keywords": [
     "aurelia",
     "navigation",
@@ -11,14 +11,14 @@
   ],
   "homepage": "http://aurelia.io",
   "bugs": {
-    "url": "https://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/issues"
+    "url": "https://github.com/aurelia/skeleton-navigation-typescript/issues"
   },
   "license": "CC0-1.0",
   "author": "Mike Graham <mgraham@technicalmedia.com> (http://cmichaelgraham.io/)",
   "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode"
+    "url": "http://github.com/aurelia/skeleton-navigation-typescript"
   },
   "scripts": {
     "test": "gulp test",

@@ -1,3 +1,30 @@
+## 1.0.0-beta.1.0.3 (2015-12-16)
+
+
+#### Bug Fixes
+
+* **all:**
+  * intellisense and TS support ([f49a3bdf](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/f49a3bdf4734f4daa23fa3687ee2795a616077f9))
+  * switch to autoinject ([617f3a14](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/617f3a146dc5d8987e339351470559180f658d9e))
+  * add types and more TS nuances ([1bd5914a](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/1bd5914aa20772084c55bc76d0de309b99c1bbdd))
+* **build:**
+  * prevent gulp watch error on TS change ([775864c3](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/775864c3b6e943229df254630b9af2232e26a4b5))
+  * remove babel from app build ([a8ce8a21](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/a8ce8a214b5be8930a3e05e22739942f13e67a6f))
+* **doc:** remove bogus api.json file ([073b7824](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/073b78248f1d9bb2ef907d2cde796252b5ef71b0))
+* **tsconfig:**
+  * support for atom-typescript ([3df8aca2](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/3df8aca22c08591e34782b25ea060e89cee0cd81))
+  * correct case of target ([74d05ac4](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/74d05ac43822fb11d1394575c52d36bc2af035ec))
+
+
+#### Features
+
+* **all:** more TS configuration ([4bd82590](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/4bd82590061cd67b4285a1303dd579de0388e2f5))
+* **build:**
+  * e2e testing ([86dc6f02](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/86dc6f0208a44cda75310708755d0eb778f8aec9))
+  * remove code coverage ([3f2d5490](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/3f2d54905184a87986542cc72f035d2491f964b3))
+  * configure tslint ([be4cc190](http://github.com/cmichaelgraham/skeleton-navigation-typescript-vscode/commit/be4cc190b1b40957645b6ef81076fcbf2bfdf510))
+
+
 ## 1.0.0-beta.1.0.1 (2015-11-17)
 
 
