@@ -17,10 +17,10 @@ var tsProject = typescript.createProject('./tsconfig.json', { typescript: tsc })
 // https://www.npmjs.com/package/gulp-plumber
 gulp.task('build-system', function() {
   return gulp.src(paths.dtsSrc.concat(paths.source))
-    .pipe(typescript(tsProject))  
     .pipe(plumber())
+    .pipe(sourcemaps.init({loadMaps: true}))    
     .pipe(changed(paths.output, {extension: '.js'}))
-    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(typescript(tsProject))  
     .pipe(sourcemaps.write({includeContent: true}))
     .pipe(gulp.dest(paths.output));
 });
