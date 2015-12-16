@@ -2,8 +2,8 @@ import {PageObject_Welcome} from './welcome.po';
 import {PageObject_Skeleton} from './skeleton.po';
 
 describe('aurelia skeleton app', function() {
-  var po_welcome,
-      po_skeleton;
+  let po_welcome: PageObject_Welcome;
+  let po_skeleton: PageObject_Skeleton;
 
   beforeEach( () => {
     po_skeleton = new PageObject_Skeleton();

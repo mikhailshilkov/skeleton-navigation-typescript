@@ -1,9 +1,4 @@
 export class PageObject_Welcome {
-
-  constructor() {
-
-  }
-
   getGreeting() {
     return element(by.tagName('h2')).getText();
   }

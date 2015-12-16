@@ -1,7 +1,8 @@
 var welcome_po_1 = require('./welcome.po');
 var skeleton_po_1 = require('./skeleton.po');
 describe('aurelia skeleton app', function () {
-    var po_welcome, po_skeleton;
+    var po_welcome;
+    var po_skeleton;
     beforeEach(function () {
         po_skeleton = new skeleton_po_1.PageObject_Skeleton();
         po_welcome = new welcome_po_1.PageObject_Welcome();

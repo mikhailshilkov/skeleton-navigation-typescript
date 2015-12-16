@@ -12,5 +12,9 @@ module.exports = {
   exportSrv: exporSrvtRoot,
   doc: './doc',
   e2eSpecsSrc: 'test/e2e/src/*.ts',
-  e2eSpecsDist: 'test/e2e/dist/'
-};
+  e2eSpecsDist: 'test/e2e/dist/',
+  dtsSrc: [
+    'typings/**/*.ts', 
+    './jspm_packages/**/*.d.ts'
+  ]
+}

@@ -24,7 +24,7 @@ describe('the Users module', () => {
         sut = new Users(<HttpClient>http),
         itemStubs = [1],
         itemFake = [2];
-
+        
     http.items = itemStubs;
     
     sut.activate().then(() => {
