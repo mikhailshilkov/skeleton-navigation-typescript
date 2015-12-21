@@ -1,13 +1,4 @@
-// Available variables which can be used inside of strings.
-// ${workspaceRoot}: the root folder of the team
-// ${file}: the current opened file
-// ${fileBasename}: the current opened file's basename
-// ${fileDirname}: the current opened file's dirname
-// ${fileExtname}: the current opened file's extension
-// ${cwd}: the current working directory of the spawned process
-
 // A task runner that calls gulp build
-
 {
 	"version": "0.1.0",
 	"command": "gulp",
@@ -19,17 +10,17 @@
 			"isBuildCommand": true,
 			// Show the output window only if unrecognized errors occur.
 			"showOutput": "silent",
-			// Use the standard less compilation problem matcher.
+			// Use the standard compilation problem matcher.
 			"problemMatcher": [
 				"$gulp-tsc"
 			]
 		},
 		{
 			"taskName": "watch",
-            "isWatching": true,
+      "isWatching": true,
 			// Show the output window only if unrecognized errors occur.
 			"showOutput": "silent",
-			// Use the standard less compilation problem matcher.
+			// Use the standard compilation problem matcher.
 			"problemMatcher": [
 				"$gulp-tsc"
 			]
