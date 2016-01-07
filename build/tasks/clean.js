@@ -8,3 +8,9 @@ gulp.task('clean', function() {
   return gulp.src([paths.output])
     .pipe(vinylPaths(del));
 });
+
+// deletes all files in the output path
+gulp.task('cleanjs', function() {
+     return gulp.src(paths.output+'**/*.js')
+    .pipe(vinylPaths(del))
+});
